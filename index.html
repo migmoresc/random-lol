@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección personajes de LOL aleatoriamente</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="flecha-izquierda">
+            <img src="flecha-izquierda.png" alt="flecha izquierda" class="flechas">
+        </div>
+        <div class="etapas">
+            <div class="etapa etapa-1">
+                <div id="tabla-jugadores" class="grid">
+                    <span></span>
+                    <span></span>
+                    <span>Top</span>
+                    <span>Jungle</span>
+                    <span>Mid</span>
+                    <span>Adc</span>
+                    <span>Support</span>
+                    <span>?</span>
+                    <span>
+                        <label for="jugador-1">Jugador 1</label>
+                    </span>
+                    <span>
+                        <input type="text" name="jugador-1" id="jugador-1" maxlength="20">
+                    </span>
+                    <span>
+                        <input type="checkbox" name="rol-j-1" id="rol-j-1-t" value="Top">
+                    </span>
+                    <span>
+                        <input type="checkbox" name="rol-j-1" id="rol-j-1-j" value="Jungle">
+                    </span>
+                    <span>
+                        <input type="checkbox" name="rol-j-1" id="rol-j-1-m" value="Mid">
+                    </span>
+                    <span>
+                        <input type="checkbox" name="rol-j-1" id="rol-j-1-a" value="Adc">
+                    </span>
+                    <span>
+                        <input type="checkbox" name="rol-j-1" id="rol-j-1-s" value="Support">
+                    </span>
+                    <span>
+                        <input type="checkbox" name="rol-j-1" id="rol-j-1-r" value="Random">
+                    </span>
+                </div>
+                <div class="centrado">
+                    <button id="boton-mas">+</button>
+                </div>
+            </div>
+            <div class="etapa etapa-2">
+                <img src="mapa.jpg" class="mapa-img" alt="">
+                <p class="top">Top</p>
+                <img src="assets/images/Aatrox.png" alt="" class="top-img">
+                <p class="jungle">Jungle</p>
+                <img src="assets/images/Aatrox.png" alt="" class="jungle-img">
+                <p class="mid">Mid</p>
+                <img src="assets/images/Aatrox.png" alt="" class="mid-img">
+                <p class="adc">Adc</p>
+                <img src="assets/images/Aatrox.png" alt="" class="adc-img">
+                <p class="support">Support</p>
+                <img src="assets/images/Aatrox.png" alt="" class="support-img">
+            </div>
+        </div>
+        <div class="flecha-derecha">
+            <img src="flecha-derecha.png" alt="flecha derecha" class="flechas">
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

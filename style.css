@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    /* background-color: antiquewhite; */
+    height: 100vh;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+    height: 100vh;
+    width: 10%;
+    /* background-color: aquamarine; */
+    float: left;
+}
+
+.manita {
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.manita:hover {
+    cursor: pointer;
+}
+
+.etapas {
+    height: 100vh;
+    width: 80%;
+    /* background-color: cadetblue; */
+    float: left;
+    position: relative;
+}
+
+.etapa {
+    /* background-color: darkgoldenrod; */
+    padding: 24px;
+    position: absolute;
+    display: block;
+    /* height: 80%;
+    width: 90%; */
+    width: 80%;
+
+    transition: transform 6s;
+    transition-timing-function: ease;
+    float: left;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+.etapa-1 {
+    transform: translate(-50%, -50%);
+}
+
+.etapa-2 {
+    transform: translate(100vw, -50%);
+
+}
+
+.mapa {
+    background: url(mapa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.mapa-img {
+    width: 100%;
+}
+
+.top,
+.jungle,
+.mid,
+.adc,
+.support {
+    color: white;
+    font-size: 32px;
+    position: absolute;
+}
+
+.top-img,
+.jungle-img,
+.mid-img,
+.adc-img,
+.support-img {
+    width: 5%;
+    position: absolute;
+}
+
+.top {
+    top: 13%;
+    left: 16%;
+}
+
+.top-img {
+    top: 12%;
+    left: 10%;
+}
+
+.jungle {
+    top: 31%;
+    left: 30%;
+}
+
+.jungle-img {
+    top: 30%;
+    left: 24%;
+}
+
+.mid {
+    top: 47%;
+    left: 46%;
+}
+
+.mid-img {
+    top: 46%;
+    left: 40%;
+}
+
+.adc {
+    top: 77%;
+    left: 82%;
+}
+
+.adc-img {
+    top: 76%;
+    left: 76%;
+}
+
+.support {
+    top: 83%;
+    left: 66%;
+}
+
+.support-img {
+    top: 82%;
+    left: 60%;
+}
+
+.grande {
+    top: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+}
+
+.mover-izquierda {
+    transform: translate(-200%, -50%);
+}
+
+.viendo {
+    display: block;
+}
+
+.flechas {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.grid span {
+    padding: 8px 8px;
+    text-align: center;
+}
+
+.centrado {
+    text-align: center;
+    padding-top: 8px;
+}
+
+input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 2px solid black;
+    appearance: initial;
+}
+
+input[type=checkbox]:checked {
+    background-color: lime;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
